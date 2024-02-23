@@ -7,6 +7,9 @@
     body {
         background-color: white;
     }
+    .center {
+        align-items:center;
+    }
     .small_icon {
         block-size: 20px;
     }
@@ -99,21 +102,40 @@
         overflow:hidden;
         float:left;
         padding-left:50px;
-        height:100px
     }
-    .homepage {
+    .home_page {
         float:left;
-        block-size: 50px;
+        padding:25px;
     }
     .introduction_page {
         float: left;
+        padding:25px;
     }
     .services {
         float:left;
+        padding:25px;
     }
     .products {
         float:left;
+        padding:25px;
     }
+    .projects {
+        float:left;
+        padding:25px;
+    }
+    .news {
+        float:left;
+        padding:25px;
+    }
+    .design {
+        float:left;
+        padding:25px;
+    }
+    .products {
+        float:left;
+        padding:25px;
+    }
+
     .t004 {
         font-size:large;
         color:black;
@@ -132,8 +154,50 @@
         text-decoration:none;
         font-weight:600;
     }
-    .center {
-        align-items:center;
+    .call_text_parent{
+        padding-left: 60px;
+        box-sizing: content-box;
+    }
+    .call {
+        padding-right: 13px;
+    }
+    #call_icon {
+        float:left;
+        width:50px;
+        height:50px;
+        padding-right: 13px;
+    }
+    #t005 {
+        /* padding-top: 10px; */
+        /* padding-left: 13px; */
+        color: black;
+        font-weight: 400;
+        font-size: medium;
+        display: block;
+    }
+    #t005:hover{
+        /* padding-top: 10px; */
+        /* padding-left: 13px; */
+        color: rgb(0,190,170);
+        font-weight: 400;
+        font-size: medium;
+        display: block;
+        
+    }
+    #t006 {
+        /* padding-top: 10px; */
+        /* padding-left: 13px; */
+        color: black;
+        clear: both;
+        font-size: large;
+        font-weight: 650;
+    }
+    #t006:hover {
+        /* padding-top: 10px; */
+        /* padding-left: 13px; */
+        color: rgb(0,190,170);
+        font-weight: 650;
+        font-size: large;
     }
 </style>
 <!-- <![endif]-->
@@ -181,7 +245,7 @@
                 <div class="products">
                     <a class="t004" href="https://cyno.com.vn/">Sản phẩm</a>
                 </div>
-                <div class="project">
+                <div class="projects">
                     <a class="t004" href="https://cyno.com.vn/">Dự án</a>
                 </div>
                 <div class="news">
@@ -193,7 +257,15 @@
                 <div class="contact">
                     <a class="t004" href="https://cyno.com.vn/">Liên hệ</a>
                 </div>
-
+            </div>
+            <div class="call_text_parent">
+                <a class="call" href="tel:195">
+                    <img id="call_icon" src="imgs/call_icon.png" alt="Call Icon"/>
+                    <div class="call_text">
+                        <a id="t005">Bạn cần tư vấn?</a>
+                        <a id="t006">079 222 2922</a>
+                    </div>
+                </a>
             </div>
         </div>
     </header>
